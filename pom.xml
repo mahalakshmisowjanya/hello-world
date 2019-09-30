@@ -21,12 +21,7 @@
     <module>webapp</module>
   </modules>
 
- <distributionManagement>
-  <snapshotRepository>
-    <id>nexus</id>
-    <url>http://13.234.67.222:8081/nexus/content/repositories/snapshots/</url>
-  </snapshotRepository>
-</distributionManagement>
+ 
 
   <build>
     <plugins>
@@ -160,7 +155,14 @@
       </plugins>
     </pluginManagement>
   </build>
-
+         
+<distributionManagement>
+  <snapshotRepository>
+    <id>nexus</id>
+    <url>http://13.234.67.222:8081/nexus/content/repositories/snapshots/</url>
+  </snapshotRepository>
+</distributionManagement>
+         
   <dependencyManagement>
     <dependencies>
       <dependency>
